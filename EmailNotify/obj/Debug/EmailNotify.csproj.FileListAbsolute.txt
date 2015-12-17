@@ -6,3 +6,4 @@ c:\users\seth\documents\visual studio 2015\Projects\EmailNotify\EmailNotify\obj\
 C:\Users\Seth\Documents\Visual Studio 2015\Projects\EmailNotify\EmailNotify\obj\Debug\EmailNotify.EmailNotify.resources
 C:\Users\Seth\Documents\Visual Studio 2015\Projects\EmailNotify\EmailNotify\obj\Debug\EmailNotify.ProjectInstaller.resources
 C:\Users\Seth\Documents\Visual Studio 2015\Projects\EmailNotify\EmailNotify\obj\Debug\EmailNotify.csproj.GenerateResource.Cache
+C:\Users\Seth\Documents\Visual Studio 2015\Projects\EmailNotify\EmailNotify\obj\Debug\EmailNotify.csprojResolveAssemblyReference.cache

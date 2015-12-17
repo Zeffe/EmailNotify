@@ -10,6 +10,7 @@ using System.Threading.Tasks;
 using System.Net.Mail;
 using System.Runtime.InteropServices;
 using System.Management;
+using Microsoft.Win32;
 
 namespace EmailNotify
 {
@@ -61,6 +62,7 @@ namespace EmailNotify
             client.Send("SMTP5241@gmail.com", "zeffer5789@gmail.com", subject, "");
         }
 
+
         protected override void OnStart(string[] args)
         {
             ServiceStatus serviceStatus = new ServiceStatus();
@@ -75,6 +77,12 @@ namespace EmailNotify
 
             serviceStatus.dwCurrentState = ServiceState.SERVICE_RUNNING;
             SetServiceStatus(this.ServiceHandle, ref serviceStatus);
+        }
+
+        protected override bool OnPowerEvent(PowerBroadcastStatus powerStatus)
+        {
+            GO = true;
+            return true;
         }
 
         public void OnTimer(object sender, System.Timers.ElapsedEventArgs args)

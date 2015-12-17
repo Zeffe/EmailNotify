@@ -28,10 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             // 
             // EmailNotify
             // 
+            this.CanHandlePowerEvent = true;
             this.ServiceName = "EmailNotify";
 
         }
