@@ -87,6 +87,7 @@ namespace EmailNotify
 
         public void OnTimer(object sender, System.Timers.ElapsedEventArgs args)
         {
+            now = DateTime.Now;
             ManagementObjectSearcher searcher = new ManagementObjectSearcher("SELECT UserName FROM Win32_ComputerSystem");
             ManagementObjectCollection collection = searcher.Get();
             string userName = (string)collection.Cast<ManagementBaseObject>().First()["UserName"];
